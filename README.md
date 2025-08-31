@@ -1,66 +1,21 @@
-## Foundry
+# 🛡️ Decentralized Escrow Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 📌 Overview
+This project implements a **decentralized escrow system** on Ethereum.  
+The contract ensures secure transactions between a **buyer** and a **seller** with the help of a trusted **arbiter**.  
 
-Foundry consists of:
+- ✅ Buyer deposits funds into escrow.  
+- ✅ Seller receives funds only after confirmation.  
+- ✅ Arbiter can resolve disputes.  
+- ✅ Prevents double withdrawals.  
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## ⚙️ Features
+- **Secure Escrow Deposits** – Buyers lock funds into the contract.  
+- **Arbiter-Controlled Resolution** – Arbiter can release or refund funds.  
+- **Buyer Confirmation** – Funds released only if buyer approves.  
+- **Immutable Records** – Transactions stored permanently on-chain.  
+- **Double-Spending Protection** – Once withdrawn, funds cannot be claimed again.  
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
